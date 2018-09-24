@@ -1,0 +1,1 @@
+ESLint configurations used by Quave for JavaScript projects

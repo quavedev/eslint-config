@@ -1,0 +1,26 @@
+{
+  "name": "@quave/eslint-config-quave",
+  "version": "0.0.1",
+  "description": "ESLint configurations used by Quave for JavaScript projects",
+  "main": "index.js",
+  "author": "Filipe Nevola",
+  "license": "MIT",
+  "dependencies": {
+    "@meteorjs/eslint-config-meteor": "^1.0.5",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-import-resolver-meteor": "^0.4.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-meteor": "^5.1.0",
+    "eslint-plugin-react": "^7.11.1"
+  },
+  "peerDependencies": {
+    "eslint": "^5.6.0",
+    "babel-eslint": "^9.0.0-beta.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/qua-ve/eslint-config.git"
+  }
+}
