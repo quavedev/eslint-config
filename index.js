@@ -4,12 +4,15 @@ module.exports = {
     allowImportExportEverywhere: true,
     sourceType: "module"
   },
-  plugins: ["meteor"],
+  plugins: ["meteor", 'react', 'import', 'react-hooks', 'jest'],
   extends: [
     "airbnb",
     "plugin:meteor/recommended",
     "prettier",
-    "@meteorjs/eslint-config-meteor"
+    'prettier/react',
+    'react-app',
+    'plugin:import/errors',
+    "@meteorjs/eslint-config-meteor",
   ],
   rules: {
     //using prettier
@@ -48,7 +51,7 @@ module.exports = {
       }
     ],
     "no-console": [
-      "warn",
+      "error",
       {
         allow: ["warn", "error", "time", "timeEnd"]
       }
@@ -67,9 +70,17 @@ module.exports = {
         templateInstanceParamName: "instance"
       }
     ],
-    "meteor/template-names": ["off"]
+    "meteor/template-names": ["off"],
+    "import/no-default-export": "error",
+    "import/first": "off",
+    "no-nested-ternary": "off",
+    "eqeqeq": "off",
+    "react/jsx-no-target-blank": "off"
   },
   settings: {
     "import/resolver": "meteor"
+  },
+  env: {
+    "jest/globals": true
   }
 };
