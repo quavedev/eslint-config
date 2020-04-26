@@ -4,11 +4,12 @@ module.exports = {
     allowImportExportEverywhere: true,
     sourceType: "module"
   },
-  plugins: ["meteor"],
+  plugins: ["meteor", "jest", 'react', 'react-hooks'],
   extends: [
     "airbnb",
     "plugin:meteor/recommended",
     "prettier",
+    'prettier/react',
     "@meteorjs/eslint-config-meteor"
   ],
   rules: {
@@ -19,6 +20,7 @@ module.exports = {
     //using prettier
     "react/jsx-indent-props": "off",
     "react/prop-types": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
     "no-confusing-arrow": "off",
     "jsx-a11y/no-static-element-interactions": "off",
     "react/jsx-space-before-closing": "off",
@@ -30,9 +32,11 @@ module.exports = {
     "import/prefer-default-export": "off",
     "import/no-named-default": "off",
     "no-underscore-dangle": "off",
+    "implicit-arrow-linebreak": "off",
     "meteor/audit-argument-checks": "off",
     "no-plusplus": "off",
     "arrow-parens": "off",
+    "react/jsx-no-target-blank": "off",
     "react/jsx-wrap-multilines": "off",
     "react/no-unescaped-entities": "off",
     "no-restricted-properties": "off",
@@ -48,7 +52,7 @@ module.exports = {
       }
     ],
     "no-console": [
-      "warn",
+      "error",
       {
         allow: ["warn", "error", "time", "timeEnd"]
       }
@@ -67,9 +71,16 @@ module.exports = {
         templateInstanceParamName: "instance"
       }
     ],
-    "meteor/template-names": ["off"]
+    "meteor/template-names": ["off"],
+    "import/no-default-export": "error",
+    "import/first": "off",
+    "no-nested-ternary": "off",
+    "eqeqeq": "off",
   },
   settings: {
     "import/resolver": "meteor"
+  },
+  "env": {
+    "jest/globals": true
   }
 };

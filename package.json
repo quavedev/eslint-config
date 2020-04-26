@@ -1,26 +1,33 @@
 {
   "name": "@quave/eslint-config-quave",
-  "version": "0.0.1",
+  "version": "1.0.0-beta.2",
   "description": "ESLint configurations used by Quave for JavaScript projects",
   "main": "index.js",
   "author": "Filipe Nevola",
   "license": "MIT",
   "dependencies": {
     "@meteorjs/eslint-config-meteor": "^1.0.5",
+    "babel-eslint": "^9.0.0-beta.3",
+    "eslint": "^5.6.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^3.1.0",
     "eslint-import-resolver-meteor": "^0.4.0",
     "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^21.26.2",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-meteor": "^5.1.0",
-    "eslint-plugin-react": "^7.11.1"
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-react-hooks": "^3.0.0",
+    "husky": "^3.1.0",
+    "lint-staged": "7.3.0",
+    "prettier-eslint": "^8.8.2"
   },
-  "peerDependencies": {
-    "eslint": "^5.6.0",
-    "babel-eslint": "^9.0.0-beta.3"
-  },
+  "files": [
+    "index.js",
+    "prettier.config.js"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/qua-ve/eslint-config.git"
+    "url": "git+ssh://git@github.com/quavedev/eslint-config.git"
   }
 }
