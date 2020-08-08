@@ -34,6 +34,7 @@ module.exports = {
     "import/no-extraneous-dependencies": "off",
     "import/prefer-default-export": "off",
     "import/no-named-default": "off",
+    "import/no-cycle": "off",
     "no-underscore-dangle": "off",
     "implicit-arrow-linebreak": "off",
     "meteor/audit-argument-checks": "off",
