@@ -50,17 +50,33 @@ Automatic check your changed files before every commit, paste this in your `pack
 ```
 If you don't have tests you can remove `meteor npm test` from the hooks, but it's a good idea to have fast tests that run before every commit.
 
+If you have jsx files as well, you can use:
+```json
+  "lint-staged": {
+    "*.{js|jsx}": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ]
+  }
+```
+
 ### Optional
 
 Set the custom commands if you want to run eslint or prettier manually or both. Add this to your `package.json`
 ```json
-{
-  "scripts": {
-    "quave-eslint": "eslint . --fix",
-    "quave-prettier": "prettier --write \"**/*.js\"",
-    "quave-check": "npm run quave-eslint && npm run quave-prettier"
+  {
+    "scripts": {
+      "quave-eslint": "eslint . --fix",
+      "quave-prettier": "prettier --write \"**/*.js\"",
+      "quave-check": "npm run quave-eslint && npm run quave-prettier"
+    }
   }
-}
+```
+
+If you have jsx files as well, you can use:
+```json
+  "quave-prettier": "prettier --write \"**/*.js\" \"**/*.jsx\"",
 ```
 
 ## Limitations
