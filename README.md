@@ -11,7 +11,7 @@ We believe we are not reinventing the wheel in this package but what we are doin
 
 Install the npm dependency
 ```sh
-npm install -D @tecsinapse/eslint-config-tecsinapse-js
+npm install -D @quave/eslint-config-quave
 ```
 
 Add to the root of your package.json
@@ -27,7 +27,7 @@ Add to the root of your package.json
 Create in the root of your project a `prettier.config.js` file and paste this
 
 ```javascript
-module.exports = require('@tecsinapse/eslint-config-tecsinapse-js/prettier.config');
+module.exports = require('@quave/eslint-config-quave/prettier.config');
 ```
 
 ## Usage
