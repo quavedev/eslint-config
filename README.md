@@ -24,11 +24,15 @@ Add to the root of your package.json
   },
 ```
 
-Create in the root of your project a `prettier.config.js` file and paste this
+Create in the root of your project `prettier.config.js` file and paste this
 
 ```javascript
 module.exports = require('@quave/eslint-config-quave/prettier.config');
 ```
+
+Create in the root of your project `.prettierignore` file and paste this
+
+`.meteor`
 
 ## Usage
 
