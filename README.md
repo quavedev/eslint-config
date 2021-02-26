@@ -1,5 +1,7 @@
 # @quave/eslint-config-quave
 
+[![npm](https://badge.fury.io/js/%40quave%2Feslint-config-quave.svg)](https://www.npmjs.com/package/@quave/eslint-config-quave)
+
 `@quave/eslint-config-quave` is a group of eslint and prettier configurations to make your Meteor application organized in a standard way.
 
 ## Why
