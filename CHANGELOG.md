@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.6 - 2021-11-12
+## 1.0.7 - 2021-11-12
 
 - Adding new rules:
   - "function-paren-newline": "off"
