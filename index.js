@@ -25,6 +25,7 @@ module.exports = {
     "jsx-a11y/label-has-associated-control": "off",
     "jsx-a11y/label-has-for": "off",
     "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
     "react/jsx-space-before-closing": "off",
     "react/jsx-tag-spacing": "off",
     "react/jsx-one-expression-per-line": "off",
@@ -49,6 +50,8 @@ module.exports = {
     "react/no-unescaped-entities": "off",
     "no-restricted-properties": "off",
     "no-mixed-operators": "off",
+    "function-paren-newline": "off",
+    "object-curly-newline": "off",
     "comma-dangle": [
       "error",
       {
