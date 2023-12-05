@@ -1,15 +1,18 @@
 module.exports = {
-  parser: "babel-eslint",
+  parser: "@babel/eslint-parser",
   parserOptions: {
     allowImportExportEverywhere: true,
-    sourceType: "module"
+    sourceType: "module",
+    requireConfigFile: false,
+    "babelOptions": {
+      "presets": ["@babel/preset-react"]
+    },
   },
   plugins: ["meteor", "jest", 'react', 'react-hooks'],
   extends: [
     "airbnb",
     "plugin:meteor/recommended",
     "prettier",
-    'prettier/react',
     "@meteorjs/eslint-config-meteor"
   ],
   rules: {
@@ -20,6 +23,7 @@ module.exports = {
     //using prettier
     "react/jsx-indent-props": "off",
     "react/prop-types": "off",
+    "react/jsx-props-no-spreading": "off",
     "jsx-a11y/click-events-have-key-events": "off",
     "jsx-a11y/anchor-is-valid": "off",
     "jsx-a11y/label-has-associated-control": "off",
@@ -87,11 +91,26 @@ module.exports = {
     "import/first": "off",
     "no-nested-ternary": "off",
     "eqeqeq": "off",
+    'global-require': 0,
+    'react/function-component-definition': 0,
+    quotes: 'off',
+    'react/jsx-curly-newline': 'off',
+    'no-restricted-syntax': ['off', 'ForOfStatement'],
+    'no-continue': 'off',
+    'no-unsafe-optional-chaining': 'off',
   },
   settings: {
     "import/resolver": "meteor"
   },
   "env": {
-    "jest/globals": true
-  }
+    "jest/globals": true,
+    node: true,
+    browser: true,
+  },
+  globals: {
+    Assets: true, // currently not possible to import as an ES6 module
+    Package: true,
+    Cordova: true,
+    Npm: true,
+  },
 };

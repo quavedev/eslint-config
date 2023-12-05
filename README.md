@@ -13,7 +13,7 @@ We believe we are not reinventing the wheel in this package but what we are doin
 
 Install the npm dependency
 ```sh
-npm install -D @quave/eslint-config-quave
+npm i -D @quave/eslint-config-quave
 ```
 
 Add to the root of your package.json
@@ -91,7 +91,12 @@ We consider an error `console.log` but in some cases you want to use it, then yo
 ```javascript
 // eslint-disable-next-line no-console
 console.log('Important log...');
-``` 
+```
+
+## Dependencies Notes
+
+- Husky 4.3.8 is working but newer versions are not ([more](https://stackoverflow.com/a/66436591))
+- prettier-plugin-tailwindcss is working 0.4.1 but newer versions are not ([more](https://github.com/tailwindlabs/prettier-plugin-tailwindcss/issues/203))
 
 ### License
 
