@@ -8,12 +8,13 @@ module.exports = {
       "presets": ["@babel/preset-react"]
     },
   },
-  plugins: ["meteor", "jest", 'react', 'react-hooks'],
+  plugins: ["meteor", "jest", 'react', 'react-hooks', '@quave/meteor-quave'],
   extends: [
     "airbnb",
     "plugin:meteor/recommended",
     "prettier",
-    "@meteorjs/eslint-config-meteor"
+    "@meteorjs/eslint-config-meteor",
+    "plugin:@quave/meteor-quave/recommended",
   ],
   rules: {
     //using prettier
