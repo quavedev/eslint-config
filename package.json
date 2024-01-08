@@ -1,6 +1,6 @@
 {
   "name": "@quave/eslint-config-quave",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "ESLint configurations used by Quave for JavaScript projects",
   "main": "index.js",
   "author": "Filipe Nevola",
