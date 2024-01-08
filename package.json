@@ -10,7 +10,7 @@
     "@babel/eslint-parser": "^7.23.3",
     "@babel/preset-react": "^7.23.3",
     "@meteorjs/eslint-config-meteor": "^1.0.5",
-    "@quave/eslint-plugin-meteor-quave": "^1.1.0",
+    "@quave/eslint-plugin-meteor-quave": "^1.2.0",
     "eslint": "^8.55.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^9.1.0",
