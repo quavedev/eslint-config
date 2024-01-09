@@ -8,12 +8,10 @@ module.exports = {
       "presets": ["@babel/preset-react"]
     },
   },
-  plugins: ["meteor", "jest", 'react', 'react-hooks', '@quave/meteor-quave'],
+  plugins: ["jest", 'react', 'react-hooks', '@quave/meteor-quave'],
   extends: [
     "airbnb",
-    "plugin:meteor/recommended",
     "prettier",
-    "@meteorjs/eslint-config-meteor",
     "plugin:@quave/meteor-quave/recommended",
   ],
   rules: {
@@ -46,7 +44,7 @@ module.exports = {
     "import/order": "off",
     "no-underscore-dangle": "off",
     "implicit-arrow-linebreak": "off",
-    "meteor/audit-argument-checks": "off",
+    "@quave/meteor-quave/audit-argument-checks": "off",
     "no-plusplus": "off",
     "arrow-parens": "off",
     "operator-linebreak": "off",
@@ -80,14 +78,14 @@ module.exports = {
         avoidQuotes: false
       }
     ],
-    "meteor/eventmap-params": [
+    "@quave/meteor-quave/eventmap-params": [
       "error",
       {
         eventParamName: "event",
         templateInstanceParamName: "instance"
       }
     ],
-    "meteor/template-names": ["off"],
+    "@quave/meteor-quave/template-names": ["off"],
     "import/no-default-export": "error",
     "import/first": "off",
     "no-nested-ternary": "off",
