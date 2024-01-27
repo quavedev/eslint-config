@@ -94,6 +94,8 @@ module.exports = {
     'react/function-component-definition': 0,
     quotes: 'off',
     'react/jsx-curly-newline': 'off',
+    'react/jsx-filename-extension': 'off',
+    'react/no-danger': 'off',
     'no-restricted-syntax': ['off', 'ForOfStatement'],
     'no-continue': 'off',
     'no-unsafe-optional-chaining': 'off',
