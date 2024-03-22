@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.5.2- 2024-03-22
+
+- Updates `@quave/eslint-plugin-meteor-quave` to [1.4.2](https://github.com/quavedev/eslint-plugin/blob/main/CHANGELOG.md#142---2024-03-22)
+
 ## 2.5.1 - 2024-01-27
 
 - Disables some rules:
