@@ -3,6 +3,7 @@
 ## 3.0.0 - 2024-06-29
 
 - Stops installing `husky` and `lint-staged`. You should install `lefthook` directly in your project.
+- Removes jest config as it was failing in projects without jest installed.
 - Upgrades all dependencies to the latest versions
 
 ## 2.5.2- 2024-03-22
