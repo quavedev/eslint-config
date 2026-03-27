@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.0.1 - 2026-03-27
+
+- Updates `@quave/eslint-plugin-meteor-quave` to [1.5.3](https://github.com/quavedev/eslint-plugin/blob/main/CHANGELOG.md#153---2026-03-27)
+
 ## 3.0.0 - 2024-06-29
 
 - Stops installing `husky` and `lint-staged`. You should install `lefthook` directly in your project.
