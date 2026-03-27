@@ -1,6 +1,6 @@
 {
   "name": "@quave/eslint-config-quave",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "ESLint configurations used by Quave for JavaScript projects",
   "main": "index.js",
   "author": "Filipe Nevola",
@@ -9,7 +9,7 @@
     "@babel/core": "^7.25.2",
     "@babel/eslint-parser": "^7.25.1",
     "@babel/preset-react": "^7.24.7",
-    "@quave/eslint-plugin-meteor-quave": "^1.4.2",
+    "@quave/eslint-plugin-meteor-quave": "^1.5.3",
     "eslint": "^8.57.1",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^9.1.0",
