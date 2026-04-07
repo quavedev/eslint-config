@@ -88,7 +88,7 @@ module.exports = {
     '@quave/meteor-quave/template-names': ['off'],
     'import/no-default-export': 'error',
     'import/first': 'off',
-    'no-nested-ternary': 'off',
+    'no-nested-ternary': 'error',
     eqeqeq: 'off',
     'global-require': 0,
     'react/function-component-definition': 0,
